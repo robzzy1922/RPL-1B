@@ -1,0 +1,184 @@
+@font-face {
+  font-family: "FontSaya";
+  src: url("Cracker\ Winter.ttf");
+}
+@font-face {
+  font-family: "FontKedua";
+  src: url("CameraObscuraDEMO.otf");
+}
+#info {
+  font-family: "FontKedua";
+  margin: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes rainbow {
+  0% {
+    color: red;
+  }
+  16.66% {
+    color: orange;
+  }
+  33.33% {
+    color: yellow;
+  }
+  50% {
+    color: green;
+  }
+  66.66% {
+    color: blue;
+  }
+  83.33% {
+    color: indigo;
+  }
+  100% {
+    color: violet;
+  }
+}
+
+.rainbow-text {
+  animation: rainbow 4s infinite; /* Ganti '7s' dengan durasi animasi yang diinginkan */
+}
+
+.typewriter-text {
+  color: rgb(134, 87, 0);
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.1em; /* Jarak antar huruf */
+  animation: typing 3.5s steps(90, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+#contactContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  text-align: right;
+}
+
+#imageLink {
+  text-decoration: none; /* Menghapus garis bawah pada tautan */
+}
+
+#gambar {
+  width: 50px; /* Sesuaikan lebar gambar sesuai kebutuhan */
+  height: auto; /* Gambar akan menyesuaikan tinggi dengan proporsi aslinya */
+
+  transition: transform 0.3s ease; /* Efek transisi pada gambar */
+}
+
+#gambar:hover {
+  transform: scale(1.1); /* Efek scaling ketika gambar dihover */
+}
+
+#errorMessage {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 10px;
+  color: #ffffff;
+  background-color: black;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 16em;
+  overflow: hidden;
+}
+
+.quotes {
+  margin: 2rem;
+}
+
+.slider-img {
+  box-shadow: 0 0.5rem 1rem rgb(0, 76, 239);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.back {
+  width: 70px;
+  height: 25px;
+  background-color: rgb(139, 139, 139);
+  display: inline-block;
+  border-radius: 8px;
+  text-align: center;
+  margin-left: 1.5em;
+  color: black;
+  margin-top: 1.5em;
+}
+
+.kem {
+  text-decoration: solid;
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(0, 0, 0);
+}
+
+.kem:hover {
+  color: rgb(0, 0, 0);
+}
+
+.kem:visited {
+  color: rgb(0, 0, 0);
+}
+.back:hover {
+  color: rgb(0, 0, 0);
+}
+
+.back:visited {
+  color: rgb(0, 0, 0);
+}
+.sebelum {
+  width: 120px;
+  height: 25px;
+  background-color: rgb(0, 76, 239);
+  display: inline-block;
+  border-radius: 8px;
+  text-align: center;
+  margin-left: 1.5em;
+  color: white;
+  margin: 20px;
+}
+.lanjut {
+  width: 120px;
+  height: 25px;
+  background-color: rgb(0, 76, 239);
+  display: inline-block;
+  border-radius: 8px;
+  text-align: center;
+  margin-left: 1.5em;
+  color: white;
+  margin: 20px;
+}
+
+.cons {
+  text-decoration: solid;
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(255, 255, 255);
+}
+
+.cons:hover {
+  color: rgb(255, 255, 255);
+}
+
+.cons:visited {
+  color: rgb(255, 255, 255);
+}

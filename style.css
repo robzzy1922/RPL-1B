@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "FontSaya";
+  src: url("Cracker\ Winter.ttf");
+}
+@font-face {
+  font-family: "FontKedua";
+  src: url("CameraObscuraDEMO.otf");
+}
+
+li {
+  margin-left: 20px;
+}
+
+.welcome {
+  font-family: "FontKedua";
+}
+h3 {
+  font-family: "FontSaya";
+}
+p {
+  display: inline;
+}
+#hero {
+  margin-bottom: 200px;
+}
+
+#info {
+  padding-top: 2rem;
+}
+
+.info {
+  margin-bottom: 2rem;
+  font-family: "FontKedua";
+}
+
+.rpl1b {
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: solid;
+  color: aliceblue;
+}
+
+.rpl1b:hover {
+  color: rgb(0, 128, 255);
+}
+
+.insta {
+  background-color: grey;
+  width: auto;
+  height: 30px;
+  margin: 30px;
+  margin-top: 0px;
+  padding-left: 3px;
+}
+
+footer {
+  background-color: #272829;
+  margin-top: 10px;
+  height: 80px;
+}
+
+@media only screen and (max-width: 600px) {
+  #kelas {
+    height: 200px;
+  }
+}

@@ -101,9 +101,14 @@ body {
   height: 16em;
   overflow: hidden;
 }
-
+.container {
+  margin-top: 40px;
+}
 .quotes {
   margin: 2rem;
+  width: auto;
+  height: 90px;
+  overflow: scroll;
 }
 
 .slider-img {

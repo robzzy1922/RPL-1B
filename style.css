@@ -33,6 +33,20 @@ p {
   font-family: "FontKedua";
 }
 
+body {
+  cursor: none;
+}
+
+.custom-cursor {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  background-image: url("img/cursor.png"); /* Ganti path dengan lokasi gambar Anda */
+  background-size: cover;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
 .rpl1b {
   font-family: "Courier New", Courier, monospace;
   text-decoration: solid;

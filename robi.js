@@ -25,3 +25,26 @@ var errorMessage = document.getElementById("errorMessage");
 setTimeout(function () {
   errorMessage.style.opacity = 0;
 }, 5000);
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Membuat elemen cursor kustom
+  const cursor = document.createElement("div");
+  cursor.className = "custom-cursor";
+  document.body.appendChild(cursor);
+
+  // Membuat elemen partikel
+  const particlesContainer = document.createElement("div");
+  particlesContainer.id = "particles-js";
+  document.body.appendChild(particlesContainer);
+
+  // Konfigurasi Particles.js
+
+  // Mengikuti pergerakan cursor
+  document.addEventListener("mousemove", function (e) {
+    const mouseX = e.clientX;
+    const mouseY = e.clientY;
+
+    cursor.style.left = mouseX + "px";
+    cursor.style.top = mouseY + "px";
+  });
+});

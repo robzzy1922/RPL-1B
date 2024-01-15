@@ -1,0 +1,13 @@
+body {
+  cursor: none;
+}
+
+.custom-cursor {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  background-image: url("img/saitama.png"); /* Ganti path dengan lokasi gambar cursor Anda */
+  background-size: cover;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}

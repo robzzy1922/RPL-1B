@@ -1,5 +1,22 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Auto transition every 3 seconds
+  const images = ["img/ika-1.jpg", "img/ika-2.jpg"];
+  const sliderImg = document.querySelector(".slider-img");
+  let currentImageIndex = 0;
+
+  function nextImage() {
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    changeImage();
+  }
+
+  function changeImage() {
+    sliderImg.style.opacity = 0;
+    setTimeout(() => {
+      sliderImg.src = images[currentImageIndex];
+      sliderImg.style.opacity = 1;
+    }, 500);
+  }
+
+  setInterval(nextImage, 3000); // Auto transition every 3 seconds
 });
 
 var errorMessage = document.getElementById("errorMessage");
